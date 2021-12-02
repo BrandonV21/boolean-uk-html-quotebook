@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template: "header" 75px
+                    "main" 1fr /
+                    1fr;
+}
+
+.top {
+    grid-area: header;
+    background-color: #8c0031;
+}
+
+h1 {
+    color: #faf4f6; 
+    padding: 1rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.middle {
+    grid-area: main;
+    margin: auto;
+    width: 50%;
+    margin-top: 40px;
+}
+
+h2 {
+    line-height: 4rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.author-s {
+    line-height: 2em;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+}
+
+#alternate {
+    color: firebrick
+}
+
+.author-q {    
+    text-align: center;
+    background-color: #c8e6c8;
+    padding-top: 1rem;
+}
+
+/* .author-qa {
+    background-color: #c8e6c8;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+} */
+
+strong {
+    text-transform: uppercase;
+    margin-left: 50%;
+    font-family: 'Noto Serif', serif;
+    font-size: 0.65rem;
+}   
+
+.musician-q {
+    background-color: #bcdefb;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
